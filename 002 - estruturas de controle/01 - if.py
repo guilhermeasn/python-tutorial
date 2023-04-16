@@ -14,3 +14,5 @@ print('Média:', m, ('👍', '👎')[m < 6])
 if m >=6: print('APROVADO')
 elif m < 4: print('REPROVADO')
 else: print('RECUPERAÇÃO')
+
+print(m > 6 and 'Parabéns!' or 'Estude mais!')
