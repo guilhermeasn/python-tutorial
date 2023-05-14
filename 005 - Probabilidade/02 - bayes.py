@@ -1,3 +1,5 @@
+from helper import getPorcent
+
 print('''
 Numa certa região, a probabilidade de chuva em um dia qualquer de primavera é de 0,1.
 Um meteorologista da TV acerta suas previsões em 80% dos dias em que chove e em 90% dos dias em que não chove.
@@ -18,7 +20,7 @@ P(A) = P(A|B1).P(B1) + P(A|B2).P(B2)
 
 PDeAcertar = PChoveEAcerta * PDeChover + PNaoChoveEAcerta * PNaoChover
 
-print('A probabilidade do metereologista acertar sua previsao é de', round(PDeAcertar * 100, 2), '%')
+print('A probabilidade do metereologista acertar sua previsao é de', getPorcent(PDeAcertar))
 
 print('''
 Teorema de Bayes
@@ -28,4 +30,4 @@ P(B|A) = P(A|B).P(B)/P(A)
 
 PDeAcertarEChover = PChoveEAcerta * PDeChover / PDeAcertar
 
-print('A probabilidade de ter chovido é de', round(PDeAcertarEChover * 100, 2), '%')
+print('A probabilidade de ter chovido é de', getPorcent(PDeAcertarEChover))

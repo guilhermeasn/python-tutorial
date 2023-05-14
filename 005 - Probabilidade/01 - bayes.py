@@ -1,3 +1,5 @@
+from helper import getPorcent
+
 print('''
 Um piloto de fórmula um tem 50% de probabilidade de vencer determinada corrida, quando esta se realiza sob chuva.
 Caso não chova durante a corrida, sua probabilidade de vitória é de 25%.
@@ -19,7 +21,7 @@ P(A) = P(A|B1).P(B1) + P(A|B2).P(B2)
 
 PDeVencer = PVencerComChuva * PDeChover + PVencerSemChuva * PNaoChover
 
-print('A probabilidade do piloto vencer é de', round(PDeVencer * 100, 2), '%')
+print('A probabilidade do piloto vencer é de', getPorcent(PDeVencer))
 
 print('''
 Teorema de Bayes
@@ -29,4 +31,4 @@ P(B|A) = P(A|B).P(B)/P(A)
 
 PDeVencerEChover = PVencerComChuva * PDeChover / PDeVencer
 
-print('A probabilidade do piloto vencer é de', round(PDeVencerEChover * 100, 2), '%')
+print('A probabilidade do piloto vencer é de', getPorcent(PDeVencerEChover))
