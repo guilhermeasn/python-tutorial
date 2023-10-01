@@ -1,4 +1,13 @@
-altura = int(input('\nQual a sua altura em centímetros? '))
+try:
+    altura = int(input('\nQual a sua altura em centímetros? '))
+except ValueError as error:
+    print('Altura inválida')
+    exit()
+
+if altura < 30 or altura > 300:
+    print('Altura inválida')
+    exit()
+
 metro2 = (altura / 100) ** 2
 
 tabela = {
