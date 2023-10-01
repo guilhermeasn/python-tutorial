@@ -1,4 +1,4 @@
-altura = False
+altura = 0
 
 while(not altura):
 
@@ -6,11 +6,11 @@ while(not altura):
         altura = int(input('\nQual a sua altura em centímetros? '))
         if altura < 30 or altura > 300:
             print('Altura inválida')
-            altura = False
+            altura = 0
 
     except ValueError as error:
         print('Altura incorreta')
-        altura = False
+        altura = 0
 
 metro2 = (altura / 100) ** 2
 
