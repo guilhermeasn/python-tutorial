@@ -1,4 +1,4 @@
-altura = int(input('Qual a sua altura em centímetros? '))
+altura = int(input('\nQual a sua altura em centímetros? '))
 metro2 = (altura / 100) ** 2
 
 tabela = {
