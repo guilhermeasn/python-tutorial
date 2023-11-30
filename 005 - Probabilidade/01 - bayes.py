@@ -31,4 +31,4 @@ P(B|A) = P(A|B).P(B)/P(A)
 
 PDeVencerEChover = PVencerComChuva * PDeChover / PDeVencer
 
-print('A probabilidade do piloto vencer é de', getPorcent(PDeVencerEChover))
+print('A probabilidade do piloto ter vencido e ter chovido é de', getPorcent(PDeVencerEChover))
